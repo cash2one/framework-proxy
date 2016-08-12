@@ -28,13 +28,7 @@ public interface Proxy<T> {
      * @return
      * @throws Exception
      */
-    T getInstance(Interceptor<?> interceptor) throws Exception ;
+    T getInstance(Class<? extends Interceptor> interceptor) throws Exception ;
 
-//    /**
-//     * 执行代理方法
-//     * @return
-//     * @throws Exception
-//     */
-//    Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Exception;
 
 }

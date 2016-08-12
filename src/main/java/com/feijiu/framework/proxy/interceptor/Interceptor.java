@@ -1,14 +1,16 @@
 package com.feijiu.framework.proxy.interceptor;
 
 
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
+import java.lang.reflect.Method;
+
 /**
  * Created by zhangtao on 2016/8/11.
  */
-public interface Interceptor<T> {
+public interface Interceptor extends MethodInterceptor {
 
-    static <T> T instance(Class<T> clazz) throws IllegalAccessException, InstantiationException {
-//        Class<T> tClass = (Class<T>)((ParameterizedType)getClass().getGenericSuperclass()).getActualTypeArguments()[0];
-        return clazz.newInstance();
-    }
-
+    @Override
+    Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable;
 }

@@ -1,5 +1,6 @@
 package com.feijiu.framework.proxy;
 
+
 import com.feijiu.framework.proxy.interceptor.Interceptor;
 
 /**
@@ -7,17 +8,23 @@ import com.feijiu.framework.proxy.interceptor.Interceptor;
  */
 public class ProxyFactory {
 
-    private Proxy<?> proxy ;//代理类生成方法
-    private Interceptor<?> interceptor ;//代理执行方法
+    private Class<? extends Proxy> proxy ;
+    private Class<? extends Interceptor> interceptor ;
 
-    public ProxyFactory(Proxy<?> proxy , Interceptor<?> interceptor){
-        this.proxy = proxy ;
+    public ProxyFactory(Class<? extends Proxy> proxy,Class<? extends Interceptor> interceptor){
         this.interceptor = interceptor ;
+        this.proxy = proxy ;
     }
 
 
-    public Object instance() throws Exception {
-        return proxy.getInstance(interceptor);
-    }
+    public <T> T instance() throws Exception {
+        if(proxy.isInterface()){
+            InterfaceProxyHandler<T> handler = new InterfaceProxyHandler<T>();
+            return handler.getInstance(interceptor);
+        }else{
 
+            return (T) proxy.newInstance().getInstance(interceptor);
+        }
+
+    }
 }
