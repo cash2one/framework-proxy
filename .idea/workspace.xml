@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e1e7878-f4ba-4d8f-9cb7-11424bd4fdc7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxyHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/InterceptorFactory.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/AbstractProxy.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/CGLibProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstracInterfacetInterceptorHandler.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxyHandler.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cglib_cglib_3_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cglib_cglib_3_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_19_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_19_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_ant_ant_1_9_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_ant_ant_1_9_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_ant_ant_launcher_1_9_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_ant_ant_launcher_1_9_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ByteCodeUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ByteCodeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstractInterceptorHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstractInterceptorHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/Interceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/Interceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java" afterPath="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/server/ServerProxyTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/server/ServerProxyTest.java" />
     </list>
@@ -41,7 +46,23 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="framework-proxy" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -49,32 +70,12 @@
     <favorites_list name="framework-proxy" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ProxyFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4491449">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientProxyTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/client/ClientProxyTest.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="AbstracInterfacetInterceptorHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstracInterfacetInterceptorHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterfaceProxyHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxyHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
+              <caret line="14" column="105" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,43 +83,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterfaceProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="37" />
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="24" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="58" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.2975558">
+              <caret line="21" column="42" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -176,11 +155,6 @@
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'framework-proxy'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
@@ -313,7 +287,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2941690200956" />
+        <entry key="$PROJECT_DIR$" value="2942134885998" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -328,11 +302,11 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/cglib/cglib/3.2.4/847edb246462b96177b6c18b85e5885f0a2a51f5/cglib-3.2.4.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.9.6/80e2063b01bab3c79c2d84e4ed5e73868394c85a/ant-1.9.6.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.9.6/d75dd4c39ba06401f20e7afffb861d268baec6bc/ant-launcher-1.9.6.jar" />
+                            <option value="D:/Program Files/gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar" />
+                            <option value="D:/Program Files/gradle/caches/modules-2/files-2.1/cglib/cglib/3.2.4/847edb246462b96177b6c18b85e5885f0a2a51f5/cglib-3.2.4.jar" />
+                            <option value="D:/Program Files/gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar" />
+                            <option value="D:/Program Files/gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.9.6/80e2063b01bab3c79c2d84e4ed5e73868394c85a/ant-1.9.6.jar" />
+                            <option value="D:/Program Files/gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.9.6/d75dd4c39ba06401f20e7afffb861d268baec6bc/ant-launcher-1.9.6.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
@@ -344,71 +318,64 @@
               <option name="name" value="framework-proxy" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="C:/Program Files work/gradle/lib/ant-1.9.6.jar" />
-                  <option value="C:/Program Files work/gradle/lib/ant-launcher-1.9.6.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-base-services-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-base-services-groovy-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-cli-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-core-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-docs-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-installation-beacon-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-jvm-services-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-launcher-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-logging-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-messaging-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-model-core-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-model-groovy-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-native-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-open-api-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-process-services-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-resources-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-tooling-api-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-ui-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/gradle-wrapper-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/groovy-all-2.4.4.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-announce-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-antlr-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-build-comparison-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-build-init-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-code-quality-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-dependency-management-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-diagnostics-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-ear-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-ide-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-ide-native-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-ide-play-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-ivy-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-jacoco-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-javascript-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-jetty-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-language-groovy-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-language-java-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-language-jvm-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-language-native-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-language-scala-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-maven-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-osgi-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-platform-base-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-platform-jvm-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-platform-native-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-platform-play-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-plugin-development-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-plugin-use-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-plugins-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-publish-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-reporting-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-resources-http-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-resources-s3-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-resources-sftp-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-scala-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-signing-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-sonar-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-test-kit-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-testing-base-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-testing-jvm-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-testing-native-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/gradle-tooling-api-builders-2.14.jar" />
-                  <option value="C:/Program Files work/gradle/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="D:/Program Files/gradle/lib/ant-1.9.3.jar" />
+                  <option value="D:/Program Files/gradle/lib/ant-launcher-1.9.3.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-base-services-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-base-services-groovy-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-cli-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-core-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-docs-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-launcher-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-messaging-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-model-core-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-model-groovy-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-native-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-open-api-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-resources-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-tooling-api-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-ui-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/gradle-wrapper-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/groovy-all-2.4.4.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-announce-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-antlr-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-build-comparison-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-build-init-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-code-quality-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-dependency-management-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-diagnostics-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-ear-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-ide-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-ide-native-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-ivy-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-jacoco-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-javascript-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-jetty-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-language-groovy-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-language-java-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-language-jvm-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-language-native-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-language-scala-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-maven-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-osgi-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-platform-base-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-platform-jvm-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-platform-native-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-platform-play-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-plugin-development-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-plugin-use-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-plugins-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-publish-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-reporting-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-resources-http-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-resources-s3-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-resources-sftp-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-scala-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-signing-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-sonar-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-test-kit-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-testing-native-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/gradle-tooling-api-builders-2.9.jar" />
+                  <option value="D:/Program Files/gradle/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -428,17 +395,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/Interceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/InterceptorceptorFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/AbstractProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/CGLibProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/InterceptorFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstractInterceptorHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/client/ClientProxyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxyHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ByteCodeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstractInterceptorHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/server/ServerProxyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstracInterfacetInterceptorHandler.java" />
       </list>
     </option>
   </component>
@@ -455,10 +425,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="2586" />
-    <option name="height" value="1406" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="2066" />
+    <option name="height" value="1132" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -486,7 +456,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -612,13 +581,10 @@
               <option name="myItemId" value="framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -627,6 +593,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../framework-transport" />
+    <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.TestMain">
     <configuration default="false" name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1085,6 +1056,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1136,6 +1112,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
+    <option name="lastUpdateTimestamp" value="1471153853854" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1151,58 +1128,64 @@
       <option name="number" value="Default" />
       <updated>1470985735105</updated>
       <workItem from="1470985737089" duration="8979000" />
+      <workItem from="1471067447302" duration="1231000" />
+      <workItem from="1471070338563" duration="2870000" />
+      <workItem from="1471146835203" duration="7483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8979000" />
+    <option name="totallyTimeSpent" value="20563000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2586" height="1406" extended-state="6" />
+    <frame x="-9" y="-9" width="2066" height="1132" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887974" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26677445" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26452905" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle View" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59218436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865733" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4917749" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.352518" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887974" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.59218436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4917749" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.352518" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1211,9 +1194,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26677445" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26452905" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle View" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865733" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1222,7 +1206,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1231,6 +1223,32 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/client/ClientProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ByteCodeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1239,33 +1257,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/server/ServerProxyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22682269">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/InterceptorFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22682269">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/Interceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42124212">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1273,18 +1299,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files work/Java/jdk1.8.0_91/src.zip!/java/lang/reflect/ParameterizedType.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/client/ClientProxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5031447">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstractInterceptorHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1313,20 +1339,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1341,13 +1357,254 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4491449">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/81e81bd6c20b965f88d0462e2559f8759fc6c26d/asm-5.1-sources.jar!/org/objectweb/asm/MethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="477" column="50" selection-start-line="477" selection-start-column="26" selection-end-line="477" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/client/ClientProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/81e81bd6c20b965f88d0462e2559f8759fc6c26d/asm-5.1-sources.jar!/org/objectweb/asm/ClassWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="790" column="79" selection-start-line="790" selection-start-column="79" selection-end-line="790" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/InterceptorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/Interceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26755852">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/server/IServerProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16722408">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/server/ServerProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23411371">
+          <caret line="7" column="94" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstractInterceptorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.632107">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/InterfaceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ClassProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23076923">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/ByteCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70234114">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feijiu/framework/proxy/interceptor/AbstracInterfacetInterceptorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="105" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/feijiu/framework/proxy/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2975558">
+          <caret line="21" column="42" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>framework-proxy</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: cglib:cglib:3.2.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

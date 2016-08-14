@@ -5,14 +5,16 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * Created by zhangtao on 2016/8/11.
- * 服务端代理方法执行
+ * Created by 涛 on 2016/8/14.
+ * 客户端方法代理执行
  */
-public class AbstractInterceptorHandler implements Interceptor {
+public class AbstracInterfacetInterceptorHandler implements Interceptor {
 
 
     @Override
     public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
-        return proxy.invokeSuper(obj,args);
+
+        System.out.println("12313213");
+        return null ;
     }
 }

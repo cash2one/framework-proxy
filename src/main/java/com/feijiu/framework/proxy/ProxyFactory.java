@@ -2,6 +2,8 @@ package com.feijiu.framework.proxy;
 
 
 import com.feijiu.framework.proxy.interceptor.Interceptor;
+import com.feijiu.framework.proxy.interceptor.InterceptorFactory;
+import net.sf.cglib.proxy.Enhancer;
 
 /**
  * Created by zhangtao on 2016/8/12.
@@ -19,12 +21,14 @@ public class ProxyFactory {
 
     public <T> T instance() throws Exception {
         if(proxy.isInterface()){
-            InterfaceProxyHandler<T> handler = new InterfaceProxyHandler<T>();
-            return handler.getInstance(interceptor);
-        }else{
-
-            return (T) proxy.newInstance().getInstance(interceptor);
+            ByteCodeUtil byteCode = new ByteCodeUtil();
+            byteCode.setSourceInterFace(proxy);
+            proxy  = byteCode.createClass();
         }
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(proxy);
+        enhancer.setCallback(InterceptorFactory.instance(interceptor));
+        return (T) enhancer.create();
 
     }
 }

@@ -1,6 +1,7 @@
 package com.feijiu.framework.proxy;
 
 import com.feijiu.framework.proxy.client.ClientProxyTest;
+import com.feijiu.framework.proxy.interceptor.AbstracInterfacetInterceptorHandler;
 import com.feijiu.framework.proxy.interceptor.AbstractInterceptorHandler;
 import com.feijiu.framework.proxy.interceptor.Interceptor;
 import com.feijiu.framework.proxy.server.IServerProxyTest;
@@ -17,22 +18,8 @@ public class TestMain {
         IServerProxyTest proxyTest = new ProxyFactory(ServerProxyTest.class,AbstractInterceptorHandler.class).instance();
         System.out.println(proxyTest.say("你"));
 
-        ClientProxyTest test = new ProxyFactory(ClientProxyTest.class,AbstractInterceptorHandler.class).instance();
+        ClientProxyTest test = new ProxyFactory(ClientProxyTest.class,AbstracInterfacetInterceptorHandler.class).instance();
         System.out.println(test.say("大"));
-
-
-
-//        Interceptor<AbstractInterceptorHandler> handler = Interceptor.instance(AbstractInterceptorHandler.class);
-//        System.out.println();
-//        ProxyFactory factory  = new ProxyFactory(new ServerProxyTest(),new AbstractInterceptorHandler());
-//        IServerProxyTest test = (IServerProxyTest) factory.instance();
-//        System.out.println(test.say("你"));
-//        System.out.println(test.say("你"));
-//        ClientProxyTest test = (ClientProxyTest) new ClientProxyTest.instance();
-//        test.say("aaaa");
-//        ProxyFactory factory  = new ProxyFactory(ClientProxyTest.,new AbstractInterceptorHandler());
-//        ClientProxyTest test = (ClientProxyTest) factory.instance();
-//        test.say("你");
     }
 
 }

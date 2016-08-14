@@ -20,7 +20,7 @@ public class ByteCodeUtil implements Opcodes {
             String classPath=interFacePath.replaceAll(interFaceName,"impl/"+className);
             AnnotationVisitor av=null ;
             ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_MAXS);
-            cw.visit(V1_8, ACC_PUBLIC + ACC_SUPER,classPath, null, "java/lang/Object", new String[]{interFacePath});
+            cw.visit(V1_8, ACC_PUBLIC + ACC_SUPER,classPath, null , "java/lang/Object", new String[]{interFacePath});
             structure(cw);
             Method[] methods=this.sourceInterFace.getMethods();
             for (Method method:methods) {
@@ -41,7 +41,7 @@ public class ByteCodeUtil implements Opcodes {
      */
     private void structure(ClassWriter cw) throws Exception{
         try {
-            MethodVisitor mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "<init>", "()V", null, null);
+            MethodVisitor mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "<init>", "()V","java/lang/Object", null);
             mv.visitVarInsn(Opcodes.ALOAD, 0);
             mv.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
             mv.visitInsn(Opcodes.RETURN);

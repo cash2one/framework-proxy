@@ -13,9 +13,4 @@ public  class ServerProxyTest extends ClassProxy<IServerProxyTest> implements IS
         return ""+str;
     }
 
-//    @Override
-//    public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Exception {
-//        System.out.println("大");
-//        return null;
-//    }
 }

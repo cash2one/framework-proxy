@@ -31,4 +31,5 @@ public interface Proxy<T> {
     T getInstance(Class<? extends Interceptor> interceptor) throws Exception ;
 
 
+
 }

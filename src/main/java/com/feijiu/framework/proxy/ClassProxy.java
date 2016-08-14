@@ -27,4 +27,5 @@ public class ClassProxy<T> implements Proxy<T> {
         enhancer.setCallback(InterceptorFactory.instance(interceptor));
         return (T) enhancer.create();
     }
+
 }
